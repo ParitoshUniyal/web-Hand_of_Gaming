@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of the year awards</title>
+    <link
+    rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+          @font-face {
+        font-family: "true_dark";
+        src: url(./fonts/UncrackedFreeTrial-X3WjK.otf);
+      }
+      @font-face {
+        font-family: "morde_war";
+        src: url(./fonts/ModernWarfare-OV7KP.ttf);
+      }
+      @font-face {
+        font-family: "para";
+        src: url(./fonts/Valorax-lg25V.otf);
+      }
+      @font-face {
+        font-family: "psp";
+        src: url(./fonts/EmotionEngineBoldItalic-raEK.ttf);
+      }
+        .firstinterface{
+            /* background: url(./assets/gameoftheyearbackground.jpg); */
+            background-image: linear-gradient(360deg, rgb(0, 0, 0), rgb(37, 36, 36),rgb(49, 48, 48), rgb(54, 52, 52), rgb(93, 91, 91),rgb(175, 172, 172),rgb(255, 255, 255));
+            height: 80vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position:100px; */
+        }
+        .interface2{
+            background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(37, 36, 36),rgb(49, 48, 48), rgb(54, 52, 52), rgb(93, 91, 91),rgb(175, 172, 172),rgb(255, 255, 255));
+            height: 80vh;
+            width: 100vw;
+            
+        }
+        .fc1{
+            background-color: rgba(0,0,0,0.5);
+            height: 80vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: silver;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .heading01{
+            font-family: "psp";
+            font-size: 80px;
+           
+        }
+        .para1{
+            font-family:"true_dark" ;
+            font-size: 50px;
+            color: azure;
+        }
+        .difference {
+            height: 1vh;
+            width: 100vw;
+            background-color: rgb(91, 92, 92);
+        }
+        .fc2{
+            color: silver;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+        .heading02{
+            font-family: "psp";
+            font-size: 60px;
+        }
+        .para2{
+            font-family:"true_dark" ;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+        .card{
+            align-items: center;
+            text-align: center;
+            color: aliceblue;
+        }
+        .r1{
+            opacity: 1;
+            animation: animate1 4s 1;
+        }
+        .r3{
+            opacity: 1;
+            animation: animate2 4s 1;
+        }
+        @keyframes animate1{
+            from{
+                transform: translateX(-1000px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        
+        }
+        @keyframes animate2{
+            from{
+                transform: translateX(1000px);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        .r2{
+            opacity: 0;
+        }
+        .interface3{
+            position: relative;
+        }
+        .popup{
+            position: absolute;
+             height: 60vh;
+             width: 40vw;
+             z-index: 1000;
+             top: 230px;
+             left: 440px;
+
+
+        }
+        .popcol{
+            height: 60vh;
+             width: 40vw;
+             background-color: rgba(0,0,0,0.4);
+             color: azure;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+             justify-content: center;
+             font-size: xx-large;
+        }
+        .pop1{
+            background: url(./assets/bgpro.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .pop2{
+            background: url(./assets/alanwake2.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .pop3{
+            background: url(./assets/finalfantasy16.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .pop4{
+            background: url(./assets/streetfighter6.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .pop5{
+            background: url(./assets/revillage.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .pop6{
+            background: url(./assets/honkaistarrail.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .row1{
+            z-index: 500;
+        }
+        .row3{
+            z-index: 500;
+        }
+        .btn1{
+            background-color: transparent;
+            border: 2px solid red;
+            color: azure;
+            border-radius: 10%;
+        }
+        .disn{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid firstinterface">
+        <div class="fc1">
+            <div class="ffc1">
+                <a href="./2nd.html"><img src="./assets/icons8-gaming-hand-64.png" alt="" height="200px"></a>
+            </div>
+            <h1 class="heading01">Game of the Year Awards</h1>
+            <p class="para1">lets make our way through the games that have won the Game of the Year Awards</p>
+        </div>
+    </div>
+    <!-- <div class="difference"></div> -->
+    <div class="container-fluid interface2">
+        <div class="fc2">
+            <h2 class="heading02">Game Of The Year Awards 2023</h2>
+            <p class="para2">As with previous iterations of The Game Awards, the 2023 show was hosted and produced by Canadian games journalist Geoff Keighley.He returned as an executive producer alongside Kimmie Kim, and Richard Preuss and LeRoy Bennett returned as director and creative director, respectively. <br>Sydnee Goodman returned as host of the 30minute preshow, titled Opening Act.The presentation took place at the Peacock Theater in Los Angeles, California, on December 7, 2023,and was live streamed across more than 30 online platforms globally, including Instagram, Facebook, Steam, TikTok, Twitch, X, and YouTube. <br>
+                Public tickets became available for purchase on November 6,and sold out within a week,quicker than any previous year.The show increased security following stage interruptions at the previous ceremony in December 2022 and Gamescoms Opening Night Live in August 2023.Keighley said the show and preshow aimed for a collective threehour runtime, like its predecessor.The Game Awards 2023 was the fourth show to feature Future Class, a list of 50 individuals from across the video game industry who best represent its future. The list was announced on December 5, featuring individuals like Marvels Midnight Suns writer Emma Kidwell, The Sims 4 experience design lead Alister Lee, and accessibility consultant Ross Minor.</p>
+        </div>
+    </div>
+    <!-- <div class="difference"></div> -->
+    <div class="container-fluid interface3 ">
+        <div class=" pop1 disn">
+            <div class="popcol">
+                <h3>Baldur's Gate 3</h3>
+                <p>One of the most nominated and winner of most awards in 2023</p>
+                <ul>
+                    <li>The Game Award for Game of the Year</li>
+                    <li>Best multiplayer game</li>
+                    <li>Best roleplaying game</li>
+                    <li>Best perfomance</li>
+                    <li>Best Player Voice </li>
+                </ul>
+                <button class="btn1" onclick="undo1()">close</button>
+            </div>
+        </div>
+        <div class=" pop2 disn">
+            <div class="popcol">
+                <h3>Alan Wake 2</h3>
+                <ul>
+                    <li>Best narrative</li>
+                    <li>Best Game Direction</li>
+                    <li>Best art direction</li>
+                </ul>
+                <button class="btn1" onclick="undo2()">close</button>
+            </div>
+        </div>
+        <div class=" pop3 disn">
+            <div class="popcol">
+                <h3>Final Fantasy XVI</h3>
+                <ul>
+                    <li>Best Soundtrack</li>
+                    <li>Best RPG</li>
+                </ul>
+                <button class="btn1" onclick="undo3()">close</button>
+            </div>
+        </div>
+        <div class=" pop4 disn">
+            <div class="popcol">
+                <h3>Street Fighter 6</h3>
+                <ul>
+                    <li>Award for Best Fighting Game</li>
+                </ul>
+                <button class="btn1" onclick="undo4()">close</button>
+            </div>
+        </div>
+        <div class=" pop5 disn">
+            <div class="popcol">
+                <h3>Resident Evil Village</h3>
+                <ul>
+                    <li>Award for the best performance</li>
+                </ul>
+                <button class="btn1" onclick="undo5()">close</button>
+            </div>
+        </div>
+        <div class=" pop6 disn">
+            <div class="popcol">
+                <h3>honkai:star rail</h3>
+                <ul>
+                    <li>Award for the best Mobile Game</li>
+                </ul>
+                <button class="btn1" onclick="undo6()">close</button>
+            </div>
+        </div>
+            
+            <div class="row row1 r2">
+        
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card1">
+                      <img
+                        src="./assets/bgpro.webp"
+                        class="img-fluid card-img-top img1"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change1(),undo2(),undo3(),undo4(),undo5(),undo6()"
+
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                          Baldur's Gate 3 <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card2">
+                      <img
+                        src="./assets/alanwake2.avif"
+                        class="img-fluid card-img-top img2"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change2(),undo1(),undo3(),undo4(),undo5(),undo6()"
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                          Alan Wake 2 <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.epicgames.com/en-US/p/alan-wake-2" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card3">
+                      <img
+                        src="./assets/finalfantasy16.webp"
+                        class="img-fluid card-img-top img3"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change3(),undo1(),undo2(),undo4(),undo5(),undo6()"
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                          Final Fantasy XVI <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.steampowered.com/app/39210/FINAL_FANTASY_XIV_Online/" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+            </div>
+            <div class="row row3 r2">
+        
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card4">
+                      <img
+                        src="./assets/streetfighter6.avif"
+                        class="img-fluid card-img-top img4"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change4(),undo1(),undo2(),undo3(),undo5(),undo6()"
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                          Street Fighter 6 <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.steampowered.com/app/1364780/Street_Fighter_6/" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card5">
+                      <img
+                        src="./assets/revillage.avif"
+                        class="img-fluid card-img-top img5"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change5(),undo1(),undo2(),undo3(),undo4(),undo6()"
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                          Resident Evil Village <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 mb-3">
+                    <div class="card mt-3 bg-dark card6">
+                      <img
+                        src="./assets/honkaistarrail.webp"
+                        class="img-fluid card-img-top img6"
+                        alt=""
+                        style="height: 300px"
+                        onclick="change6(),undo1(),undo2(),undo3(),undo4(),undo5()"
+                      />
+                      <h4 class="card-title" style="text-decoration: underline;">
+        
+                           Honkai: Star Rail <br>
+                          <button class="btn text-success border-success bg-transparent" style="height: 60px; margin-top: 40px;"><a href="https://store.epicgames.com/en-US/p/honkai-star-rail" class="link text-success" style="text-decoration: none;">Check it out</a></button>
+                      </h4>
+        
+                    </div>
+                  </div>
+            </div>
+        
+    </div>
+     <script>
+        let row1=document.querySelector(".row1")
+        let row2=document.querySelector(".row3")
+        let img1=document.querySelector(".img1")
+        let img2=document.querySelector(".img2")
+        let img3=document.querySelector(".img3")
+        let img4=document.querySelector(".img4")
+        let img5=document.querySelector(".img5")
+        let img6=document.querySelector(".img6")
+        
+        let popdiv1=document.querySelector(".pop1")
+        let change1=()=>{
+                  popdiv1.classList.remove('disn')
+                  popdiv1.classList.add('popup')
+        }
+        let undo1=()=>{
+            popdiv1.classList.remove('popup')
+            popdiv1.classList.add('disn')
+        }
+
+        let popdiv2=document.querySelector(".pop2")
+        let change2=()=>{
+            popdiv2.classList.remove('disn')
+            popdiv2.classList.add('popup')
+        }
+        let undo2=()=>{
+            popdiv2.classList.remove('popup')
+            popdiv2.classList.add('disn')
+        }
+
+        let popdiv3=document.querySelector(".pop3")
+        let change3=()=>{
+            popdiv3.classList.remove('disn')
+            popdiv3.classList.add('popup')
+        }
+        let undo3=()=>{
+            popdiv3.classList.remove('popup')
+            popdiv3.classList.add('disn')
+        }
+
+        let popdiv4=document.querySelector(".pop4")
+        let change4=()=>{
+            popdiv4.classList.remove('disn')
+            popdiv4.classList.add('popup')
+        }
+        let undo4=()=>{
+            popdiv4.classList.remove('popup')
+            popdiv4.classList.add('disn')
+        }
+
+        let popdiv5=document.querySelector(".pop5")
+        let change5=()=>{
+            popdiv5.classList.remove('disn')
+            popdiv5.classList.add('popup')
+        }
+        let undo5=()=>{
+            popdiv5.classList.remove('popup')
+            popdiv5.classList.add('disn')
+        }
+
+        let popdiv6=document.querySelector(".pop6")
+        let change6=()=>{
+            popdiv6.classList.remove('disn')
+            popdiv6.classList.add('popup')
+        }
+        let undo6=()=>{
+            popdiv6.classList.remove('popup')
+            popdiv6.classList.add('disn')
+        }
+
+        let observer1 = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                row1.classList.remove('r2')
+                row1.classList.add('r1')
+            }
+
+            console.log(entry.isIntersecting)
+        });
+    },{threshold:0.2})
+    observer1.observe(row1)
+
+    let observer2 = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                row2.classList.remove('r2')
+                row2.classList.add('r3')
+            }
+
+            console.log(entry.isIntersecting)
+        });
+    },{threshold:0.2})
+
+    
+    observer2.observe(row2)
+    
+     </script>
+
+
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

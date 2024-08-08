@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genres</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+       html{
+            scroll-behavior: smooth;
+        }
+      @font-face {
+        font-family: "true_dark";
+        src: url(./fonts/UncrackedFreeTrial-X3WjK.otf);
+      }
+      @font-face {
+        font-family: "morde_war";
+        src: url(./fonts/ModernWarfare-OV7KP.ttf);
+      }
+      @font-face {
+        font-family: "para";
+        src: url(./fonts/Valorax-lg25V.otf);
+      }
+
+      .c1 {
+        height: 95vh;
+        width: 100vw;
+        background: url(./assets/background2ndpage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* .navbar-brand{
+        margin-right: 900px;
+    } */
+      .textdiv {
+        font-family: "true_dark";
+        font-size: 30px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        justify-content: center;
+      }
+      .heading01 {
+        font-size: 60px;
+      }
+      .difference {
+        height: 2vh;
+        width: 100vw;
+        background-color: rgb(18, 226, 234);
+      }
+      .c2 {
+        background: url(./assets/background2ndpage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .genre1 {
+        font-family: "morde_war";
+      }
+      .c3 {
+        background: url(./assets/background2ndpage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .c4 {
+        background: url(./assets/background2ndpage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .c5 {
+        background: url(./assets/btngming.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .c8{
+        background: url(./assets/btngming.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+      }
+      .c6{
+        opacity: 0;
+      }
+      .c7{
+        transition: 2s 1s;
+        opacity: 1 ;
+      }
+      .difference2{
+        width: 100vw;
+        height: 3px;
+        background-color: aquamarine;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+      .heading02{
+        text-decoration: underline;
+      }
+      .card{
+        text-align: center;
+      }
+      
+
+      @media (max-width: 850px) {
+        .textdiv {
+          font-family: "true_dark";
+          font-size: 15px;
+          margin-top: 60px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: rgb(255, 255, 255);
+          justify-content: center;
+        }
+        .heading01 {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid c1">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand"
+          ><img
+            src="./assets/icons8-gaming-hand-64.png"
+            alt=""
+            class="navbar-brand"
+            height="70px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#dontshow"
+          aria-controls="#dontshow"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dontshow">
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fa fa-home"></i>Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#bottom" class="nav-link">
+                <i class="fa fa-plus"></i> More Articals</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link" id="report" onclick="alert('this is experimental!');">
+                <i class="fa fa-exclamation-triangle"></i> Report</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="tel:8307424859" class="nav-link">
+                <i class="fa fa-phone"></i> Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="textdiv">
+        <h1 class="heading01">Lets Start Your Gaming Journey</h1>
+        <p>
+          Many people wants to start gaming as an hobby as gaming is booming in
+          the world right now.
+        </p>
+        <p>
+          But they dont know where to start,let us tell you some famous genres
+          and their top games for you.
+        </p>
+        <p>
+          These games are selected with world wide voting and their overall
+          performance,graphics,storyline and charcters
+        </p>
+        <p>Hope you enjoy these</p>
+      </div>
+    </div>
+    <div class="difference"></div>
+    <div class="container-fluid c2">
+      <div class="row">
+        <div class="col-12 col-md-6 genre1">
+          <h1 class="heading02">Action Open-World</h1>
+        </div>
+       
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <img src="./assets/gowpro.webp" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-1 <br />
+            God Of War 4
+          </h2>
+          <p>
+            Developer: Insomniac Games <br />
+            Platform(s): PC, PS4, PS5
+          </p>
+          <p>
+            Few believed that Sony Santa Monica would be able to make Kratos
+            relevant again. Times had changed, and the industry had moved on
+            from the glorious, senseless aggression that helped define his
+            original trilogy of games. And then God of War arrived, a title that
+            straddled the line between reboot and sequel and delivered a
+            definitive experience of the PS4 era in the aftermath of its action.
+            It's a truly wondrous experience, capturing a sense of fluid motion
+            and control in its combat that few games have ever achieved. God of
+            War is a truly must-play action game, as is its thunderous sequel
+            God of War Ragnarok if you can't get enough of Kratos.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/1593500/God_of_War/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-2 <br />
+            Uncharted 4
+          </h2>
+          <p>
+            Developer: Naughty Dog <br />
+            Platform(s): PC, PS4, PS5
+          </p>
+          <p>
+            Nathan Drake couldn't have hoped for a better send-off. With a
+            Thief's End, Naughty Dog embraced the legacy of PlayStation's most
+            important mascot in a generation and delivered a truly seminal
+            adventure. Uncharted has always felt as if it were this smooth blend
+            of Tomb Raider's action and Indiana Jones' attitude, and nowhere is
+            that better represented than in Uncharted 4: A Thief's End. Whether
+            you're new to the series or have been following along from the
+            beginning, this is cinematic action at its finest – leading you from
+            one heart-stopping set-piece to another with heart, humor, and an
+            atmosphere of swashbuckling resilience that you can't help but fall
+            in love with.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/1659420/UNCHARTED_Legacy_of_Thieves_Collection/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+        
+        <div class="col-12 col-md-5">
+          <img src="./assets/u4pro.webp" class="img-fluid mt-3" />
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-5">
+          <img src="./assets/sm2pro.webp" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-3 <br />
+            Spider-Man 2
+          </h2>
+          <p>
+            Developer: Insomniac Games <br />
+            Platform(s):PS5
+          </p>
+          <p>
+            If you thought the first game had it all, think again. Marvel's
+            Spider-Man 2 sees Peter Parker teaming up with Miles Morales to
+            explore whole new areas of the Big Apple in a character-swapping,
+            web-shooting, bad guy-busting adventure. Deploying one of many
+            newly-added abilities is simply the cherry atop the power fantasy
+            cake, because I could spend hours upon hours simply traversing the
+            busy Manhattan cityscape and still never get bored. Also, did we
+            mention that both Venom and Kraven the Hunter make an appearance
+            here? These are just a few reasons why Marvel's Spider-Man 2 is
+            undoubtedly one of the best action games ever, never mind one of the
+            best Marvel games to boot. If you've yet to pick up this PS5
+            exclusive, here's your sign.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/1817070/Marvels_SpiderMan_Remastered/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="difference"></div>
+    <div class="container-fluid c3">
+      <div class="row">
+        <div class="col-12 col-md-6 genre1">
+          <h1 class="heading02">Horror Open-World</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <img src="./assets/subnauticapro.avif" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-1 <br />
+            Subnautica
+          </h2>
+          <p>
+            Developer(s):Unknown Worlds Entertainment. <br />
+            Platform(s):PC,PS4,PS5,XBOX
+          </p>
+          <p>
+            If someone was browsing through the shelves of a video game store
+            and came across Subnautica, they may look at the bright blue sea on
+            the front cover and expect the game to be similar to the relaxing
+            Endless Ocean on the Nintendo Wii. Those people would be in for a
+            nasty surprise though, as although Subnautica doesn't officially
+            class itself as a horror game, it would be classed by some as the
+            scariest game on this list. The game taps into many common fears,
+            such as the fear of the unknown, fear of darkness, fear of monsters,
+            and fear of isolation, as it dumps the player into an ocean on an
+            alien planet, and as one might expect, the waters are home to all
+            manners of alien sea creatures. Exploration, crafting, hunting, and
+            surviving are the main objectives of this open-world, or more
+            specifically, open-sea title.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/264710/Subnautica/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-2 <br />
+            S.T.A.L.K.E.R.: Shadow of Chernobyl
+          </h2>
+          <p>
+            Developer(s):GSC Game World<br />
+            Platform(s): PC , PS4 , Xbox One
+          </p>
+          <p>
+            In the game, the player assumes the identity of the Marked One, an
+            amnesiac man trying to find and kill the mysterious Strelok within
+            the Zone, a forbidden territory surrounding the Chernobyl Nuclear
+            Power Plant. It is set after a fictitious second Chernobyl disaster,
+            which further contaminated the surrounding area with radiation, and
+            caused strange otherworldly changes in local fauna, flora, and the
+            laws of physics. The background and some terminology of the game are
+            borrowed from the novella Roadside Picnic and its film adaptation
+            Stalker.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/4500/STALKER_Shadow_of_Chernobyl/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+        
+        <div class="col-12 col-md-5">
+          <img
+            src="./assets/Stalker-Shadow-Of-Chernobylpro.avif"
+            class="img-fluid mt-3"
+          />
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-5">
+          <img src="./assets/darkwoodpro.avif" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-3 <br />
+            Darkwood
+          </h2>
+          <p>
+            Developer:Acid Wizard Studio <br />
+            Platforms: Xbox One , PS4 , PC , Switch
+          </p>
+          <p>
+            Darkwood differentiates itself from the other entries on this list
+            with its top-down perspective. Despite the perspective, Darkwood's
+            forest is immersive, atmospheric, and horrifyingly unsettling. Set
+            in the late 80s, a mysterious forest has reclaimed a large part of
+            land and is continuing its steady spread, no one knowing how or why.
+            Those who remain trapped in the woods are ravaged by a mysterious
+            plague. Players take on the roles of various characters and their
+            experiences with this strange phenomenon. Scary, supernatural, and
+            full of threats, Darkwood sets itself apart as perhaps the scariest
+            open-world game, with each passing minute scarier than the last.
+            Players will need nerves of steel if they are to survive the
+            terrifying machinations of the evil forces present in Darkwood.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/274520/Darkwood/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="difference"></div>
+    <div class="container-fluid c4">
+      <div class="row">
+        <div class="col-12 col-md-6 genre1">
+          <h1 class="heading02">Adventure Open-World</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <img src="./assets/rdr2pro.webp" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-1 <br />
+            Red Dead Redemption 2
+          </h2>
+          <p>
+            Developer: Rockstar <br />
+            Platform(s): PC, PS4, PS5, Xbox Series X, Xbox One
+          </p>
+          <p>
+            In one of the most ambitious and sprawling games in recent memory,
+            you can strap on outlaw Arthur Morgan’s stirrups and spend hour
+            after hour journeying through the last days of the Western frontier
+            in the company of your trusty horse and a few old friends. In this
+            prequel to the much-loved Red Dead Redemption, weirdly named Red
+            Dead Redemption 2, you find yourself playing as a member of Dutch
+            van der Linde’s legendary gang, alongside a younger version of the
+            original, legendary Red Dead protagonist John Marston, and are able
+            to ride freely across a great American landscape. You are faced with
+            either taking the path of the honourable man as the era of the Wild
+            West approaches its death or spending your days being as terrible an
+            outlaw can be - the choice is yours as you lasso your way through
+            one adventure to the next.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-2 <br />
+            The Witcher 3: Wild Hunt
+          </h2>
+          <p>
+            Developer: CD Projekt Red <br />
+            Platform(s): PC, PS4, Xbox One, Nintendo Switch
+          </p>
+          <p>
+            Sometimes you need a companion in your gaming whose humour is
+            sardonic enough to keep you entertained. Enter Geralt the Witcher,
+            who brings with him in The Witcher 3: Wild Hunt one of the most
+            wide-reaching and versatile adventures ever seen, as you
+            inadvertently end up caught in a battle between empires for control
+            and even solve a few murder mysteries involving elves and werewolves
+            in the search for your adoptive daughter across a vast and
+            unforgiving terrain. The many quests of Geralt of Rivia are
+            plentiful and emotional enough that no gamer could want for anything
+            once they pick up a controller and put on his Witcher’s medallion.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+        <div class="col-12 col-md-5">
+          <img src="./assets/witcherpro.webp" class="img-fluid mt-3" />
+        </div>
+      </div>
+      <div class="difference2"></div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-5">
+          <img src="./assets/bgpro.webp" class="img-fluid mt-3" />
+        </div>
+        <div class="col-12 col-md-7">
+          <h2>
+            Number-3 <br />
+            Baldur's Gate 3
+          </h2>
+          <p>
+            Developer: Larian Studios <br />
+            Platforms: PC, PS5
+          </p>
+          <p>
+            Widely regarded as one of the best RPGs of recent years, Baldur's
+            Gate 3 is a winding adventure through the D&D universe. Set on the
+            Sword Coast and spanning three stunning acts, the main campaign of
+            BG3 is one fraught with magic, danger, and no shortage of
+            mesmerising characters to meet along the way. In true tabletop
+            fashion, BG3's combat is turn based - but don't let that put you
+            off. Exploring is as easy as clicking on items, spots on the ground,
+            or NPCs to converse with, and with fully-motion captured dialogue
+            animations, there's something universally yet uniquely charming
+            about Baldur's Gate 3.
+          </p>
+          <a
+            href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/"
+            class="link"
+            >Veiw More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="difference"></div>
+    <div class="container-fluid c8" id="bottom">
+      <div class="container-fluid c5 c6">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card mt-3 bg-dark">
+              <img
+                src="./assets/atgpro.webp"
+                class="img-fluid card-img-top"
+                alt=""
+                style="height: 300px"
+              />
+              <h4 class="card-title" style="text-decoration: underline;">
+                
+                  All Time Grossing
+                
+              </h4>
+              <div class="card-body">
+                <p class="card-text" style="color: white">
+                  Explore the games that has been all time high in gaming world.
+                </p>
+                <button class="btnlnk bg-transparent border-success " style="height: 40px; width: 90px; border-width: 6px; " ><a href="./all_tg.html" style="text-decoration: none; font-size: larger;">View</a></button>
+              </div>
+              
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card mt-3 bg-dark">
+              <img
+                src="./assets/the-game-awardspro.avif"
+                class="img-fluid card-img-top"
+                alt=""
+                style="height: 300px"
+              />
+              <h4 class="card-title" style="text-decoration: underline;">
+                
+                  Game Of The Year Awards
+              </h4>
+              <div class="card-body">
+                <p class="card-text" style="color: white">
+                  Explore the games that have won game of the year awards and enjoy them.
+
+                </p>
+                <button class="btnlnk bg-transparent border-success  " style="height: 40px; width: 90px; border-width: 6px;  " ><a href="./game_oy.html" style="text-decoration: none; font-size: larger;">View</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <div class="card mt-3 bg-dark">
+              <img
+                src="./assets/consolepro.webp"
+                class="img-fluid card-img-top"
+                alt=""
+                style="height: 300px"
+              />
+              <h4 class="card-title" style="text-decoration: underline;">
+                
+                  Consoles
+                
+              </h4>
+              <div class="card-body">
+                <p class="card-text" style="color: white">
+                  Explore all differnt consoles to play amazing games and enjoy them.
+                  
+                </p>
+                <button class="btnlnk bg-transparent border-success " style="height: 40px; width: 90px; border-width: 6px; " ><a href="./console.html" style="text-decoration: none; font-size: larger;">View</a></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let decorate = document.querySelector(".c5")
+    
+
+    let observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                decorate.classList.remove('c6')
+                decorate.classList.add('c7')
+            }
+
+            console.log(entry.isIntersecting)
+        });
+    },{threshold:0.2})
+
+    observer.observe(decorate)
+
+
+    </script>
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
